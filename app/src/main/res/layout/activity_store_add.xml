@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".StoreAddActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back_arrow"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_store"
+                        android:textSize="@dimen/sp_18"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_50"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgStore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_240"
+                android:layout_margin="@dimen/dp_20"
+                android:src="@drawable/upload_image"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/store_information"
+                android:textColor="@color/lbl_color1"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/etStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Store Name *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Firm Name*"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Owner Name *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tvOwnerDob"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Date Of Birth"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/date_icon"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tvOwnerAnni"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Date Of Anniversary"
+                android:drawableRight="@drawable/date_icon"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etGstNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="GST Number"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_distributor"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/lbl_color1"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20" />
+            <Spinner
+                android:id="@+id/distributorSpin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_information"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/lbl_color1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"/>
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Contact No *"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="WhatsApp No *"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Email Id"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Person Information"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/lbl_color1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/chkSame"
+                android:textColorHint="@color/hint_color"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textSize="@dimen/sp_14"
+                android:text="Same as Owner"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactLL"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/etContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="Contact Person Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lbl_color1"
+                    android:background="@drawable/rounded_corner_edit_txt"
+                    android:paddingLeft="@dimen/dp_10" />
+
+                <EditText
+                    android:id="@+id/etContactPhn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="Contact Person Phone"
+                    android:inputType="text"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lbl_color1"
+                    android:background="@drawable/rounded_corner_edit_txt"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_10" />
+
+                <EditText
+                    android:id="@+id/etContactWhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="Contact Person Whatsapp"
+                    android:inputType="text"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lbl_color1"
+                    android:background="@drawable/rounded_corner_edit_txt"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/tvContactDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="Date Of Birth"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/date_icon"
+                    android:textColorHint="@color/lbl_color1"
+                    android:background="@drawable/rounded_corner_edit_txt"
+                    android:paddingLeft="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/tvContactAnni"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="Date Of Anniversary"
+                    android:drawableRight="@drawable/date_icon"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lbl_color1"
+                    android:background="@drawable/rounded_corner_edit_txt"
+                    android:paddingLeft="@dimen/dp_10" />
+
+            </LinearLayout>
+
+
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_information"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/lbl_color1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"/>
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Address *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etState"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="State *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etArea"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Area *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dp_10" />
+            <Spinner
+                android:id="@+id/areaSpin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                />
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="City *"
+                android:inputType="text"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:visibility="gone"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="Pin Code *"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/lbl_color1"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:paddingLeft="@dimen/dp_10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_information"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone"
+                android:textColor="@color/lbl_color1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_edit_txt"
+                android:padding="@dimen/dp_10"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distributor Name"
+                        android:textColor="@color/lbl_color2"
+                        android:textSize="@dimen/sp_12"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:textSize="@dimen/sp_12"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="J.P Enterprise"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/drop"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnStoreAdd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/rounded_corner_btn"
+                android:text="@string/add_new_store"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
